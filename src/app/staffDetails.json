@@ -1,0 +1,37 @@
+[
+  {
+    "staff_name": "abc",
+    "role": "doctor",
+    "id": 1
+  },
+  {
+    "staff_name": "abcd",
+    "role": "admin",
+    "id": 2
+  },
+  {
+    "staff_name": "akash",
+    "role": "doctor",
+    "id": 10
+  },
+  {
+    "staff_name": "akash",
+    "role": "doctor",
+    "id": 110
+  },
+  {
+    "staff_name": "rohan",
+    "role": "doctor",
+    "id": 111
+  },
+  {
+    "staff_name": "string",
+    "role": "string",
+    "id": 113
+  },
+  {
+    "staff_name": "mariya",
+    "role": "doctor",
+    "id": 115
+  }
+]

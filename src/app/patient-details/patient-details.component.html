@@ -1,0 +1,46 @@
+<app-header></app-header>
+
+<div class="row w-100">
+    <div class="col-4 col-xl-2 pe-0">
+        <div class="container-fluid bg-secondary m-0 sidebar">
+            <app-sidebar></app-sidebar>
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="row h-100">
+            <div class="col-xl-6 col-12 container-fluid d-flex justify-content-center align-items-center">
+                <table class="table table-bordered table-striped caption-top">
+                    <caption>
+                        <b>Patient Details</b>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Phone No.</th>
+                            <th>Address</th>
+                            <th>Created by</th>
+                            <th>ID</th>
+                            <th>Created at</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (item of PatientDetails; track $index) {
+                        <tr>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.role }}</td>
+                            <td>{{ item.phone_number }}</td>
+                            <td>{{ item.address }}</td>
+                            <td>{{ item.created_by }}</td>
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.created_at }}</td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

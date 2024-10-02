@@ -1,0 +1,46 @@
+<div class="container-fluid form-container">
+    <form class="form" [formGroup]="form">
+        <div class="form d-flex flex-column align-items-center justify-content-center">
+            <div class="row my-3">
+                <div class="col-12">
+                    <select name="UserType" id="UserType" class="form-element" formControlName="userType">
+                        <option value="0">Select User Type</option>
+                        <option value="Staff">Staff</option>
+                        <option value="Patient">Patient</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="row my-3">
+                <div class="col-12">
+                    <input type="email" name="Email" id="email" placeholder="Email" class="form-element" formControlName="email">
+                </div>
+                <div>
+                    @if(form.controls['email'].touched && form.controls['email'].errors?.['required'] ) {
+                        <span class="text-danger">* This is Required</span>
+                    }
+                    @else if (form.controls['email'].touched && form.controls['email'].errors?.['email'] ) {
+                        <span class="text-danger">* Invalid Email</span>
+                    }
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12">
+                    <input type="password" name="Password" id="password" placeholder="Password" class="form-element" formControlName="password">
+                </div>
+                <div>
+                    @if(form.controls['password'].touched && form.controls['password'].errors?.['required']) {
+                        <span class="text-danger">* This is Required</span>
+                    }
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-6">
+                    <button class="btn rounded-pill bg-primary form-button" (click)="onLogin()">
+                            SUBMIT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

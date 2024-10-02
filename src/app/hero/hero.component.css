@@ -1,0 +1,22 @@
+.hero-section {
+    height: 75vh;
+    color: #0a55eb;
+}
+.hero-section {
+    background:linear-gradient(rgba(220, 228, 230, 0.3), rgba(220, 228, 230, 0.3)), url("./../../../public/images/download\ \(1\).jpeg");  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-img {
+    padding: 0;
+}
+.form-content {
+    padding: 0;
+}
+#main {
+    margin: 0;
+}
+.app-form {
+    display: block;
+    height: 100%;
+}

@@ -1,0 +1,41 @@
+.sidebar {
+    height: 100vh;
+}
+
+.dashboard-heading {
+    font-size: 32px;
+}
+
+caption {
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .dashboard-heading {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 540px) {
+    .dashboard-heading {
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 480px) {
+    .dashboard-heading {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 420px) {
+    .dashboard-heading {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 350px) {
+    .dashboard-heading {
+        font-size: 14px;
+    }
+}

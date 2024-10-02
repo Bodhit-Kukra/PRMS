@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<div class="row w-100">
+    <div class="col-4 col-xl-2 pe-0">
+        <div class="container-fluid bg-secondary m-0 sidebar">
+            <app-sidebar></app-sidebar>
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="row h-100">
+            <div class="col-xl-6 col-12 container-fluid d-flex justify-content-center align-items-center">
+                <table class="table table-bordered table-striped caption-top">
+                    <caption>
+                        <b>Staff Details</b>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Staff Name</th>
+                            <th>Role</th>
+                            <th>ID</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (item of StaffDetails; track $index) {
+                        <tr>
+                            <td>{{ item.staff_name }}</td>
+                            <td>{{ item.role }}</td>
+                            <td>{{ item.id }}</td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
