@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -10,7 +10,19 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+
+  constructor(private elementRef: ElementRef) {}
+
+  ngOnInit(): void {
+      const homeElement = this.elementRef.nativeElement.querySelector('.home');
+      const contactElement = this.elementRef.nativeElement.querySelector('.contact');
+
+      if(homeElement) {
+        homeElement.classList.remove("active");
+        contactElement.classList.add("active");
+      }
+  }
 
   contactForm: FormGroup = new FormGroup({
     name: new FormControl('', [Validators.required]),

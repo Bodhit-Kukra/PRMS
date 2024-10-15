@@ -1,13 +1,73 @@
+* {
+    background-color: #0e1734;
+    color: white;
+}
+
+.hospital_image {
+    width: 100%;
+    height: 80vh;
+}
+
+.features-container {
+    background-color: #f8fafb;
+}
+
+.empty-container {
+    height: 15vh;
+}
+
+.bottom-line {
+    height: 30vh;
+}
+
+
+.my-card {
+    width: 250px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#features {
+    background-image: linear-gradient(to right, rgba(245, 222, 179, 0.7), rgba(245, 222, 179, 0.7)), url("../../../public/features.webp");
+}
+
+.features {
+    background: none;
+    color: #0e1734;
+}
+
+#members {
+    background-image: linear-gradient(to right, rgba(245, 222, 179, 0.5), rgba(245, 222, 179, 0.5)), url("../../../public/members.jpg");
+}
+
+.members {
+    background: none;
+    color: #0e1734;
+}
+
+#technology {
+    background-image: linear-gradient(to right, rgba(245, 222, 179, 0.7), rgba(245, 222, 179, 0.1)), url("../../../public/technology.webp");
+}
+
+.technology {
+    background: none;
+    color: #0e1734;
+}
+
 .about {
     overflow: hidden;
 }
+
 .blue {
     color: #0a55eb;
 }
+
 .prms {
     color: #0a55eb;
     font-size: 25px;
 }
+
 .content {
     margin-left: auto;
     margin-right: auto;
